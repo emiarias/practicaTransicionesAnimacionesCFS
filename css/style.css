@@ -13,9 +13,15 @@ main{
     background-color: tomato;
     width: 200px;
     height: 200px;
+    transition: background-color 800ms  ease-in-out;
+    /* transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
   }
 
   
   .item:hover {
     background: slateblue;
+   
   }
