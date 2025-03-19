@@ -31,3 +31,18 @@ main{
   .texto-grande:hover{
     font-size: 24px;
   }
+
+  /* ejemplo de transicion de opacidad */
+
+  .cajaOpacidad{
+    width: 150px;
+    height: 50px;
+    background-color: #3560f9;
+    color: white;
+    opacity: 0.5;
+    transition: opacity 1s linear;
+  }
+
+  .cajaOpacidad:hover{
+    opacity: 1;
+  }
