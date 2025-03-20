@@ -84,3 +84,22 @@ main {
     transform: translateX(150px);
   }
 }
+
+.rotacion{
+  width: 100px;
+  animation: girar 2s linear infinite;
+  /*  animation-name: transladoEjex;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+}
+
+@keyframes girar {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
