@@ -1,48 +1,65 @@
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-main{
-    flex-grow: 1;
+main {
+  flex-grow: 1;
 }
 
 /* ejemplo de transiciones */
 .item {
-    background-color: tomato;
-    width: 200px;
-    height: 200px;
-    transition: background-color 800ms  ease-in-out;
-    /* transition-property: background-color;
+  background-color: tomato;
+  width: 200px;
+  height: 200px;
+  transition: background-color 800ms ease-in-out;
+  /* transition-property: background-color;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
     transition-delay: 1s; */
-  }
+}
 
-  .item:hover {
-    background: slateblue;
-   
-  }
-  .texto-grande{
-    transition: font-size 2s ease-out;
-  }
+.item:hover {
+  background: slateblue;
+}
+.texto-grande {
+  transition: font-size 2s ease-out;
+}
 
-  .texto-grande:hover{
-    font-size: 24px;
-  }
+.texto-grande:hover {
+  font-size: 24px;
+}
 
-  /* ejemplo de transicion de opacidad */
+/* ejemplo de transicion de opacidad */
 
-  .cajaOpacidad{
-    width: 150px;
-    height: 50px;
-    background-color: #3560f9;
-    color: white;
-    opacity: 0.5;
-    transition: opacity 1s linear;
-  }
+.cajaOpacidad {
+  width: 150px;
+  height: 50px;
+  background-color: #3560f9;
+  color: white;
+  opacity: 0.5;
+  transition: opacity 1s linear;
+}
 
-  .cajaOpacidad:hover{
-    opacity: 1;
+.cajaOpacidad:hover {
+  opacity: 1;
+}
+
+/* .transicionConRelativo{
+    position: relative;
+    transition: left 2s linear;
   }
+  .transicionConRelativo:hover{
+    left: 25px;
+  } */
+
+.transicionConRelativo {
+  position: relative;
+  height: 50px;
+  top: 0px;
+  transition: top 300ms ease-in;
+}
+.transicionConRelativo:hover {
+  top: 25px;
+}
