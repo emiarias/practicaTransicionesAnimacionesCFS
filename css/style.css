@@ -63,3 +63,24 @@ main {
 .transicionConRelativo:hover {
   top: 25px;
 }
+
+/* Ejemplos de animaciones */
+.movimientoEjex{
+  width: 150px;
+  height: 50px;
+  animation-name: transladoEjex;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation-fill-mode: backwards; */
+}
+
+@keyframes transladoEjex {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(150px);
+  }
+}
